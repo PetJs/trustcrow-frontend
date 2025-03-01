@@ -39,10 +39,14 @@ function App() {
       <div className="bg-[#000] text-white min-h-screen">
         <header className="p-4">
           <nav className="flex justify-between items-center">
-            <img src={Logo} alt="movie-logo" className='text-xl w-24'/>
+            <div className='flex items-center'>
+              <img src={Logo} alt="movie-logo" className='text-xl md:w-24 w-12'/>
+              <h1 className='md:text-3xl text-sm font-bold'>TrustCrow Frontend</h1>
+            </div>
+            
             <div className="flex gap-2">
-              <button className='bg-gray-700 rounded-full px-4 h-12'>SignIn</button>
-              <button className='bg-gray-700 rounded-full px-4 h-12'>Register</button>
+              <button className='bg-gray-700 rounded-full md:px-4 px-2  md:h-12 h-8'>SignIn</button>
+              <button className='bg-gray-700 rounded-full md:px-4 px-2 md:h-12 h-8'>Register</button>
             </div>
           </nav>
 
