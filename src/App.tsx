@@ -73,11 +73,11 @@ function App() {
           {loading ? (
             <Loader className='animate-spin mx-auto'/>
           ): searchData && searchData.length > 0 ? (
-            <div className="grid grid-cols-4 gap-2 place-items-center">
+            <div className="grid md:grid-cols-4 grid-cols-2 gap-2 place-items-center ">
               {searchData.map((item, index) => ( 
                 <div key={index} className="p-4 rounded flex flex-col justify-center items-center">
-                  <img src={item.Poster} alt={item.Title} className='rounded-lg h-92' />
-                  <h3 className="text-lg font-bold">{item.Title}</h3>
+                  <img src={item.Poster} alt={item.Title} className='rounded-lg md:h-92 h-72' />
+                  <h3 className="md:text-lg text-sm font-bold">{item.Title}</h3>
                   <p className="text-sm">{item.rating}</p>
                   <p className="text-sm">{item.Year}</p>
                 </div>

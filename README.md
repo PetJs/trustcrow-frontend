@@ -21,7 +21,10 @@ npm install
 npm run dev
 ```
 
+## Api Used
+The api used to generate movie was from [OMDb API](https://www.omdbapi.com)
+
 ## Preview of the Site
 ![""]()
 
-Here is the link to the deployed url: [Movie Search Site]()
+Here is the link to the deployed url: [Movie Search Site](https://trustcrow-frontend.vercel.app/)
