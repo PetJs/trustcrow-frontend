@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { SearchIcon, Loader } from 'lucide-react';
 import { SearchData } from './utils/types';
+import Logo from "./assets/movieroll1.png"
 import api from './utils/axios';
 import './App.css';
 
@@ -37,11 +38,11 @@ function App() {
     <>
       <div className="bg-[#000] text-white min-h-screen">
         <header className="p-4">
-          <nav className="flex justify-between">
-            <h1 className='text-xl bg-gray-700 p-2'>LOGO</h1>
+          <nav className="flex justify-between items-center">
+            <img src={Logo} alt="movie-logo" className='text-xl w-24'/>
             <div className="flex gap-2">
-              <button className='bg-gray-700 rounded-full px-4'>SignIn</button>
-              <button className='bg-gray-700 rounded-full px-4'>Register</button>
+              <button className='bg-gray-700 rounded-full px-4 h-12'>SignIn</button>
+              <button className='bg-gray-700 rounded-full px-4 h-12'>Register</button>
             </div>
           </nav>
 
